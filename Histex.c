@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
           hist[HIST_HGH] = hist[HIST_HGH+2]/HIST_HGH;
         for (j = HIST_LOW; j <= HIST_HGH; j++)
           if (hist[j] > 0)
-            printf("%d %lld\n",j,hist[j]);
+            printf("%d\t%lld\n",j,hist[j]);
       }
 
     else
