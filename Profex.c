@@ -84,7 +84,8 @@ int main(int argc, char *argv[])
           }
         printf("\nRead %d:\n",id);
         for (i = 0; i < plen; i++)
-          printf(" %5d: %5d\n",i,profile[i]);
+          if (profile[i] > 0)
+            printf("%5d\n",i);
       }
     free(profile);
   }
